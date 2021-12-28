@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from "@material-ui/core";
 import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { InnerLayout } from '../Layouts';
 import Footer from '../Components/Footer';
 import DemonstrationSection from '../Components/DemonstrationSection';

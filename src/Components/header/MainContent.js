@@ -1,5 +1,5 @@
 import React from 'react'
-import { createTheme, makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 // import { Grid } from '@material-ui/core';
 import styled from 'styled-components';
 import CtaButton from '../CtaButton';

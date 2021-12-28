@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import styled from 'styled-components';
 import business from '../img/marketing.mp4';
 import circles from '../img/circles.svg';

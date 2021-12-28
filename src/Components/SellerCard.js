@@ -1,51 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
 import data from '../data';
-import { Grid } from "@material-ui/core";
-import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
+// import { Grid } from "@material-ui/core";
+// import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
-    cardHome: {
-        margin: '0 auto',
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        background: 'rgba(255, 255, 255, 0.15)',
-        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-        backdropFilter: 'blur(8.5px)',
-        borderRadius: '10px',
-        color: '#ffffff',
-        textTransform: 'uppercase',
-        letterSpacing: '0.4rem',
-        width: '100%',
-        transition: 'all 1s',
-        '&:hover': {
-            transform: 'translateY(-20px)',
-        },
+// const useStyles = makeStyles((theme) => ({
+//     cardHome: {
+//         margin: '0 auto',
+//         display: 'flex',
+//         alignItems: 'center',
+//         flexDirection: 'column',
+//         background: 'rgba(255, 255, 255, 0.15)',
+//         boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+//         backdropFilter: 'blur(8.5px)',
+//         borderRadius: '10px',
+//         color: '#ffffff',
+//         textTransform: 'uppercase',
+//         letterSpacing: '0.4rem',
+//         width: '100%',
+//         transition: 'all 1s',
+//         '&:hover': {
+//             transform: 'translateY(-20px)',
+//         },
 
-        [theme.breakpoints.down('sm')]: {
-            width: '90%',
-        },
-        [theme.breakpoints.down('xs')]: {
-            width: '95%'
-        },
-    },
-    Tokenomics: {
-        marginBottom: '3rem',
-        justifyContent: 'space-evenly',
-        // [theme.breakpoints.down('sm')]: {
-        //     flexDirection: 'column-reverse',
-        // },
-    },
-    minicheems: {
-        textAlign: "center",
-        width: "100%",
+//         [theme.breakpoints.down('sm')]: {
+//             width: '90%',
+//         },
+//         [theme.breakpoints.down('xs')]: {
+//             width: '95%'
+//         },
+//     },
+//     Tokenomics: {
+//         marginBottom: '3rem',
+//         justifyContent: 'space-evenly',
+//         // [theme.breakpoints.down('sm')]: {
+//         //     flexDirection: 'column-reverse',
+//         // },
+//     },
+//     minicheems: {
+//         textAlign: "center",
+//         width: "100%",
 
-        [theme.breakpoints.down('sm')]: {
-            marginTop: '134px',
-        },
-    }
-}));
+//         [theme.breakpoints.down('sm')]: {
+//             marginTop: '134px',
+//         },
+//     }
+// }));
 
 const Theme = createTheme({
     palette: {
@@ -57,10 +58,10 @@ const Theme = createTheme({
 });
 
 function SellerCard() {
-    const classes = useStyles();
+    // const classes = useStyles();
 
-    const TelegramBackground = "#16BFFD";
-    const TwitterBackground = "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
+    // const TelegramBackground = "#16BFFD";
+    // const TwitterBackground = "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
 
     return (
         <ThemeProvider theme={Theme}>
