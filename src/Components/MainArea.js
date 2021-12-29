@@ -6,8 +6,8 @@ import circles from '../img/circles.svg';
 import {InnerLayout} from '../Layouts'
 import MainContent from './header/MainContent';
 const useStyles = makeStyles((theme) => ({
-    Header: {
-        margin: '2rem',
+    contentHeader: {
+        // margin: '2rem',
 
         [theme.breakpoints.down('sm')]: {
             margin: '2rem auto',
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 function MainArea() {
     const classes = useStyles();
     return (
-        <MainAreaStyled className={classes.Header}>
+        <MainAreaStyled className={classes.contentHeader}>
             <video src={business} muted playsInline autoPlay loop></video>
             {<img src={circles} alt="" className="overlay" />}
             <InnerLayout>

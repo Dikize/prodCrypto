@@ -7,37 +7,8 @@ import Navigation from './Navbar';
 import SmallHeading from '../SmallHeading';
 import blockchain from '../../img/bchain.png';
 
-const useStyles = makeStyles((theme) => ({
-    cardHome: {
-        margin: '0 auto',
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        background: 'rgba(255, 255, 255, 0.15)',
-        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-        backdropFilter: 'blur(8.5px)',
-        borderRadius: '10px',
-        color: '#ffffff',
-        textTransform: 'uppercase',
-        letterSpacing: '0.4rem',
-        width: '100%',
-        transition: 'all 1s',
-        '&:hover': {
-            transform: 'translateY(-20px)',
-        },
 
-        [theme.breakpoints.down('sm')]: {
-            width: '90%',
-        },
-        [theme.breakpoints.down('xs')]: {
-            width: '95%'
-        },
-    },
-    // headerTitle: {
-    //     [theme.breakpoints.down('xs')]: {
-    //         width: '95%'
-    //     },
-    // },
+const useStyles = makeStyles((theme) => ({
     hedearParaf: {
         [theme.breakpoints.down('xs')]: {
             display: 'none'
@@ -82,13 +53,14 @@ const MainContentStyled = styled.div`
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
     height: 100%;
+    width: 100%;
+    margin: 0!important;
     .content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         height: 100%;
-        width: 100%;
+        width: 80%;
         .left{
             display: flex;
             justify-content: center;

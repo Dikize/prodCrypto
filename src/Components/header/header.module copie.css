@@ -1,0 +1,336 @@
+.containercheemsking {
+    height: auto;
+    width: 100vw;
+    font-family: "Raleway", sans-serif;
+    /* background-image: url("../assets/backGround.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.containerFirstContainer {
+    background-image: url("./../assets/backGround.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerSecondContainer {
+    width: 100%;
+    padding-top: 23px;
+    background-image: url("./../assets/background3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*-------- Section Parallax ----------*/
+
+.parallax {
+    width: 100%;
+    height: 300px;
+    background: url(./background2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parallax p {
+    font-size: 65px;
+    color: #f1f1f1;
+}
+.parallax span {
+    display: block;
+    font-size: xx-large;
+    color: #f1f1f1;
+}
+
+
+@media (max-width: 600px) {
+    .card-table {
+        width: 80% !important;
+    }
+}
+
+
+/* ################################### */
+.rotatescaleup {
+    -webkit-animation: rotate-scale-up 0.65s linear both;
+    animation: rotate-scale-up 0.65s linear both;
+}
+
+@-webkit-keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+
+
+
+/* #################################### */
+
+.rotatescaledown {
+    -webkit-animation: rotate-scale-down 8.65s linear infinite both;
+    animation: rotate-scale-down 8.65s linear infinite both;
+}
+
+@-webkit-keyframes rotate-scale-down {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(0.5) rotateZ(180deg);
+        transform: scale(0.5) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-scale-down {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(0.5) rotateZ(180deg);
+        transform: scale(0.5) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+
+
+/* #################################### */
+.slidetop {
+    width: 100%;
+    -webkit-animation: slide-top 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+    animation: slide-top 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+
+
+/* #################################### */
+.scaleinhorcenter {
+    width: 100%;
+    -webkit-animation: scale-in-hor-center 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+    animation: scale-in-hor-center 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+@-webkit-keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+
+/* ################################################################# */
+.bounceinfwd {
+    -webkit-animation: bounce-in-fwd 3.1s infinite alternate both;
+    animation: bounce-in-fwd 3.1s infinite alternate both;
+}
+
+@-webkit-keyframes bounce-in-fwd {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: scale(0.84);
+        transform: scale(0.84);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    89% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-fwd {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: scale(0.84);
+        transform: scale(0.84);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    89% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
