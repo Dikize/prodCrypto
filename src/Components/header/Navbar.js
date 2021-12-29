@@ -1,6 +1,6 @@
 import React from 'react'
-import { AppBar, Toolbar, Grid, InputBase, IconButton, Badge, Avatar } from '@material-ui/core'
-import { NotificationsNone as NotificationsNoneIcon, ChatBubbleOutline as ChatBubbleOutlineIcon , PowerSettingsNew as PowerSettingsNewIcon, Search as SearchIcon } from '@material-ui/icons';
+import { AppBar, Toolbar, Grid, IconButton, Badge, Avatar } from '@material-ui/core'
+import { NotificationsNone as NotificationsNoneIcon, ChatBubbleOutline as ChatBubbleOutlineIcon , PowerSettingsNew as PowerSettingsNewIcon } from '@material-ui/icons';
 
 import logo from '../../img/logo.jpg'
 import logo2 from '../../img/logo.heic'

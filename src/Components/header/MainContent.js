@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import styled from 'styled-components';
 import CtaButton from '../CtaButton';
 import Navigation from './Navbar';
-import SmallHeading from '../SmallHeading';
 import blockchain from '../../img/bchain.png';
 
 
