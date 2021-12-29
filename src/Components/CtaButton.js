@@ -10,20 +10,22 @@ function CtaButton({name}) {
 }
 
 const CtaButtonStyled = styled.a`
+    display: inline-block;
     text-transform: uppercase;
     background: linear-gradient(130deg, #395FF6 , #EB3FA9);
     padding: .9rem 1.5rem;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: medium;
     font-weight: 500;
     cursor: pointer;
     transition: all .4s ease-in-out;
-    &:last-child{
-        margin-left: 1.5rem;
-    }
+
     &:hover{
         transition: all .4s ease-in-out;
         background: linear-gradient(120deg,  #EB3FA9, #395FF6);
     }
+    @media (max-width: 920px) {
+        margin-left: 0!important;
+    };
 `;
 export default CtaButton;

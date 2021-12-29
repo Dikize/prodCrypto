@@ -21,22 +21,23 @@ function MainContent() {
     return (
         <MainContentStyled >
             <Navigation />
-            <div className="content">
+            <div className={`${classes.form} content`}>
                 <div className="left">
-                    <SmallHeading title={'Toutes les devises numériques au même endroit'} identifier={'Before'} />
+                    {/* <SmallHeading title={'Toutes les devises numériques au même endroit'} identifier={'Before'} /> */}
                     <h1 className={classes.headerTitle}>
                         <span className='GradientText'>Impressionnant NFTS</span> 
                     </h1>
                     <p className={classes.hedearParaf}>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Vero id unde officiis hic nihil, quasi soluta ex corrupti nesciunt dolorem. 
-                        Cumque obcaecati sint officiis quis laboriosam vitae, error molestiae temporibus 
-                        voluptatum consectetur, 
-                        quibusdam magni, delectus a autem soluta optio laborum!
                     </p>
                     <div className="btns-con">
-                        <CtaButton name={'découvrir plus'} />
-                        <CtaButton name={'obtenir de l\'aide'} />
+                        <button>
+                            <CtaButton className="btn-item" name={'découvrir plus'} />
+                        </button>
+                        {/* <button>
+                            <CtaButton className="btn-item" name={'obtenir de l\'aide'} />
+                        </button> */}
                     </div>
                 </div>
                 <div className="right">
@@ -56,31 +57,61 @@ const MainContentStyled = styled.div`
     height: 100%;
     width: 100%;
     margin: 0!important;
+
     .content{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         height: 100%;
-        width: 80%;
+        width: 100%;
         .left{
             display: flex;
             justify-content: center;
             flex-direction: column;
             h1{
+                font-size: xx-large;
                 padding: 1.8rem 0;
             }
+            p {
+                font-size: medium;
+            }
             .btns-con{
-                margin-top: 3rem;
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 1rem;
+                button {
+                    background: none;
+                    border: none;
+                }
             }
         }
 
         .right{
+            display: flex;
+            align-content: space-evenly;
+            flex-direction: column;
+            justify-content: center;
+
             img{
-                position: absolute;
-                right: -11%;
-                bottom: -1%;
-                width: 60%;
+                width: 100%;
             }
         }
     }
+    @media (max-width: 920px) {
+
+        .content{
+            .left{
+                h1{ padding: 0 0 0.5rem; }
+            }
+        }
+    };
+    @media (max-width: 720px) {
+        .eZxlrv {height: 407px;}
+        .content{
+            .left, .right{
+                margin-top: 1rem;
+                justify-content: normal;
+            }
+        }
+    };
 `;
 export default MainContent;

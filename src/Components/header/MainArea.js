@@ -1,19 +1,22 @@
 import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import styled from 'styled-components';
-import business from '../img/marketing.mp4';
-import circles from '../img/circles.svg';
-import {InnerLayout} from '../Layouts'
-import MainContent from './header/MainContent';
+import business from '../../img/marketing.mp4';
+import circles from '../../img/circles.svg';
+import {InnerLayout} from '../../Layouts'
+import MainContent from './MainContent';
 const useStyles = makeStyles((theme) => ({
     contentHeader: {
         // margin: '2rem',
 
+        [theme.breakpoints.down('md')]: {
+            height: '665px'
+        },
         [theme.breakpoints.down('sm')]: {
-            margin: '2rem auto',
+            // margin: '2rem auto',
         },
         [theme.breakpoints.down('xs')]: {
-            margin: 'auto',
+            // margin: 'auto',
         },
     }
 }));
@@ -36,6 +39,9 @@ const MainAreaStyled = styled.header`
     height: auto;
     position: relative;
     overflow: hidden;
+    @media (max-width: 1091px) {
+        height: '665px';
+    };
     .overlay{
         width: 100%;
         height: 100%;

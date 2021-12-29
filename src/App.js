@@ -1,5 +1,5 @@
 import Footer from "./pages/Home";
-import MainArea from "./Components/MainArea";
+import MainArea from "./Components/header/MainArea";
 
 function App() {
   return (
